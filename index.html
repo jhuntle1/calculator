@@ -4,56 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculator</title>
+    <script src="calculator.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Calculator JS</title>
+   
 </head>
 <body>
-    <div class="calculator-body clearfix">
-        <form name="case">
-        <input name="display" id="readout" value="">
-        <!--<div id="readout"></div>-->
-        <div class="keys">
-            <input type="button" class="num" value="c" onclick="runC()">
-            <!--<span class="num" id="clear"><button>c</button></span>-->
-            <span class="num"></span>
-            <span class="num"></span>
-            <span class="num"></span>
+    <div class="calculator-body">
+    <form name="calculator">
+        <input name="readout" id="readout" value="">
+
+            <input type="button" class="num" id="clear" value="c" onclick="runC()">
+            <input type="button" class="num">
+            <input type="button" class="num">
+            <input type="button" class="num">
+
             <input type="button" class="num" value="7" onclick="run7()">
             <input type="button" class="num" value="8" onclick="run8()">
             <input type="button" class="num" value="9" onclick="run9()">
-            <input type="button" id="divide" class="num symbol" value="/" onclick="runDivide()">
+            <input type="button" id="divide" class="num" value="/" onclick="runDivide()">
+
             <input type="button" class="num" value="4" onclick="run4()">
             <input type="button" class="num" value="5" onclick="run5()">
             <input type="button" class="num" value="6" onclick="run6()">
-            <input type="button" id="multiply" class="num symbol" value="*" onclick="runMultiply()">
+            <input type="button" id="multiply" class="num" value="*" onclick="runMultiply()">
+
             <input type="button" class="num" value="1" onclick="run1()">
             <input type="button" class="num" value="2" onclick="run2()">
             <input type="button" class="num" value="3" onclick="run3()">
-            <input type="button" id="subtract" class="num symbol" value="-" onclick="runSubtract()">
-            <input type="button" id="num-0" class="num" value="0" onclick="run0()">
-            <input type="button" id="decimal" class="num symbol" value="." onclick="runSubtract()">
-            <input type="button" id="result" class="num symbol" value="=" onclick="runEquals">
-            <input type="button" class="num symbol" id="add" value="+" onclick="runPlus">
+            <input type="button" id="subtract" class="num" value="-" onclick="runSubtract()">
 
-<!--might need to change to change number 0  class-->
-   
-            <!--<span class="num" id="num-7"><button>7</button></span>
-            <span class="num" id="num-8"><button>8</button></span>
-            <span class="num" id="num-9"><button>9</button></span>-->
-            <!--<span class="num symbol" id="divide"><button>÷</button></span>
-            <span class="num" id="num-4"><button>4</button></span>
-            <span class="num" id="num-5"><button>5</button></span>
-            <span class="num" id="num-6"><button>6</button></span>
-            <span class="num symbol" id="multiply"><button>*</button></span>
-            <span class="num" id="num-1"><button>1</button></span>
-            <span class="num" id="num-2"><button>2</button></span>
-            <span class="num" id="num-3"><button>3</button></span>
-            <span class="num symbol" id="subtract"><button>-</button></span>
-            <span class="num" id="num-0"><button>0</button></span>
-            <span class="num symbol" id="decimal"><button>.</button></span>
-            <span class="num symbol" id="result"><button>=</button></span>
-            <span class="num symbol" id="add"><button>+</button></span>-->
+            <input type="button" class="num" value="0" onclick="run0()">
+            <input type="button" id="decimal" class="num" value="." onclick="runDecimal()">
+            <input type="button" id="equals" class="num" value="=" onclick="runEquals()">
+            <input type="button" id="plus" class="num" value="+" onclick="runPlus()">
+
+
         </div>
-    </div>
 </body>
 </html>
